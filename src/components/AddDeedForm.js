@@ -110,7 +110,7 @@ export default function AddDeedForm({ variant, onAdd }) {
                 : "text-gray-400 hover:text-gray-200"
             }`}
           >
-            Write
+            Confess
           </button>
           <button
             type="button"
@@ -121,7 +121,7 @@ export default function AddDeedForm({ variant, onAdd }) {
                 : "text-gray-400 hover:text-gray-200"
             }`}
           >
-            Quick
+            Conceal
           </button>
         </div>
       )}

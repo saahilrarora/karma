@@ -1,6 +1,6 @@
 import DeedItem from "./DeedItem";
 
-export default function DeedList({ deeds, variant }) {
+export default function DeedList({ deeds, variant, onRemove }) {
   if (deeds.length === 0) {
     return (
       <p
@@ -16,7 +16,7 @@ export default function DeedList({ deeds, variant }) {
   return (
     <div className="flex w-full flex-col gap-2">
       {deeds.map((deed) => (
-        <DeedItem key={deed.id} deed={deed} variant={variant} />
+        <DeedItem key={deed.id} deed={deed} variant={variant} onRemove={onRemove} />
       ))}
     </div>
   );
