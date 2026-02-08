@@ -5,6 +5,7 @@ import KarmaScore from "../components/KarmaScore";
 import DeedList from "../components/DeedList";
 import AddDeedForm from "../components/AddDeedForm";
 import DateNavigator from "../components/DateNavigator";
+import KarmaBar from "../components/KarmaBar";
 import { getTodayKey } from "../utils/storage";
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
           onDateChange={setSelectedDate}
         />
         <KarmaScore score={totalScore} />
+        <KarmaBar score={totalScore} />
       </div>
 
       {/* -------- Bad Karma (right / bottom) -------- */}
